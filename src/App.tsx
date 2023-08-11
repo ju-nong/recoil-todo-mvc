@@ -1,5 +1,13 @@
+import { TodoHeader, TodoMain, TodoFooter } from "./components";
+
 function App() {
-    return <>HelloWorld</>;
+    return (
+        <>
+            <TodoHeader />
+            <TodoMain />
+            <TodoFooter />
+        </>
+    );
 }
 
 export default App;
