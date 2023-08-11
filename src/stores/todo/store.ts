@@ -25,7 +25,17 @@ const getFiltered = selector({
     },
 });
 
-// Completed된 Todo
+// Not Completed Todo
+const getNotCompleted = selector({
+    key: "getNotCompleted",
+    get: ({ get }) => {
+        const todo = get(todoState);
+
+        return todo.filter((item) => !item.completed);
+    },
+});
+
+// Completed Todo
 const getCompleted = selector({
     key: "getCompletedTodo",
     get: ({ get }) => {
@@ -45,4 +55,10 @@ const getIsAllCompleted = selector({
     },
 });
 
-export { todoState, getFiltered, getCompleted, getIsAllCompleted };
+export {
+    todoState,
+    getFiltered,
+    getNotCompleted,
+    getCompleted,
+    getIsAllCompleted,
+};

@@ -1,11 +1,13 @@
+import { TodoNavigation } from ".";
+
 // import { TodoList, TodoNavigation } from "@components/todo";
 
 function TodoContainer() {
     return (
         <section>
-            컨테이너
             {/* <TodoList />
             <TodoNavigation /> */}
+            <TodoNavigation />
         </section>
     );
 }
