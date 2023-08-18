@@ -3,9 +3,6 @@ import styled from "@emotion/styled";
 import { Todo, todoState } from "../../stores/todo";
 import { useOutside } from "../../utils";
 import { useSetRecoilState } from "recoil";
-// import { useDispatch } from "react-redux";
-// import { Todo, toggleCompleted, changeTodo, destoryTodo } from "@stores/todo";
-// import { useOutside } from "@utils/index";
 
 interface TodoItemProps {
     todo: Todo;
